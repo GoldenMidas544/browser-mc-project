@@ -1,3 +1,16 @@
+let player = {
+    x: COLS / 2,
+    y: ROWS / 2,
+    vx: 0,
+    vy: 0,
+    width: 0.8,
+    height: 1.8,
+    onGround: false
+};
+
+const GRAVITY = 0.05;
+const MOVE_SPEED = 0.1;
+const JUMP_FORCE = -1.2;
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
