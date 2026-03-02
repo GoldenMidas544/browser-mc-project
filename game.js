@@ -11,7 +11,7 @@ const COLS = Math.floor(canvas.width / TILE);
 // --- PLAYER ---
 let player = {
     x: COLS / 2,
-    y: ROWS / 2,
+    y: ROWS / 2 - 10,   // spawn ABOVE the ground so player is visible
     vx: 0,
     vy: 0,
     width: 0.8,
@@ -114,4 +114,3 @@ function draw() {
 }
 
 draw();
-
